@@ -58,8 +58,8 @@ const stuff = {
 let state = {};
 
 let newPeople = [];
-const newStuff = {};
+let newStuff = {};
 let newState = {};
 
-['Odie', ...people, 'Garfield'] = newPeople;
-{tv, radio, toothbrush, [cars, 'New Car']} = newStuff;
+newPeople = ['Odie', ...people, 'Garfield'];
+newStuff = {...stuff, cars: [...stuff.cars, 'Delorean']};
