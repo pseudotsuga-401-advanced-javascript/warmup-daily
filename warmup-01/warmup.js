@@ -14,6 +14,7 @@ function whileLoop (array){
   let x = 0;
   while(x < array.length){
     console.log(array[x]);
+    x++;
   }
 }
 
