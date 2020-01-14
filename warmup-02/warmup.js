@@ -53,7 +53,7 @@ const stuff = {
 let state = {};
 
 let newPeople = [];
-const newStuff = {};
+let newStuff = {};
 let newState = {};
 // End starter code
 
