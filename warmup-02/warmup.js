@@ -58,9 +58,9 @@ let newState = {};
 // End starter code
 
 newPeople = ['Odie', ...people, 'Garfield'];
-newStuff = {...stuff, cars: [...cars, 'Honda']};
+newStuff = {...stuff, cars: [...stuff.cars, 'Honda']};
 state = {...people, ...stuff};
-newState = {people: ['Odie', ...people, 'Garfield'], stuff: {...stuff, cars: [...cars, 'Honda']}};
+newState = {people: ['Odie', ...people, 'Garfield'], stuff: {...stuff, cars: [...stuff.cars, 'Honda']}};
 
 console.log(people);
 console.log(stuff);
