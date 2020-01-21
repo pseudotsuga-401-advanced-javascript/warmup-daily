@@ -52,5 +52,5 @@ const stuff = {
 let state = {};
 
 let newPeople = ['Odie', ...people, 'Garfield'];
-const newStuff = {};
+const newStuff = {...stuff, cars: [...stuff.cars, 'Automobile']};
 let newState = {};
