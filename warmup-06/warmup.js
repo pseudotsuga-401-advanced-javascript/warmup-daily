@@ -54,3 +54,5 @@ let state = {people: [...people], stuff: {...stuff}};
 let newPeople = ['Odie', ...people, 'Garfield'];
 const newStuff = {...stuff, cars: [...stuff.cars, 'Automobile']};
 let newState = {people: ['Odie', ...state.people, 'Garfield'], stuff: {...state.stuff, cars: [...state.stuff.cars, 'Automobile']}};
+
+console.log(people, stuff, state);
