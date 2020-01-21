@@ -23,3 +23,19 @@ function map(array, callback){
   }
   return newArray;
 }
+
+function filter (array, callback){
+  let newArray = [];
+  for(let i = 0; i <= array.length; i++){
+    if(callback(array[i])){newArray[newArray.length] = array[i];}
+  }
+  return newArray;
+}
+
+function reduce (array, callback){
+  let answer;
+  for(let i = 0; i <= array.length; i++){
+    answer = callback(array[i]);
+  }
+  return answer; 
+}
