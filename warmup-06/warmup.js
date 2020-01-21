@@ -7,3 +7,11 @@ function forLoop(array){
     console.log(number);
   }
 }
+
+function whileLoop(array){
+  let i = 0;
+  while(i < array.length){
+    console.log(array[i]);
+    i++;
+  }
+}
