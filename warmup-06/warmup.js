@@ -49,7 +49,7 @@ const stuff = {
   cars: ['Toyota','Mazda']
 }
 
-let state = {};
+let state = {people: [...people], stuff: {...stuff}};
 
 let newPeople = ['Odie', ...people, 'Garfield'];
 const newStuff = {...stuff, cars: [...stuff.cars, 'Automobile']};
