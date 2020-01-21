@@ -51,6 +51,6 @@ const stuff = {
 
 let state = {};
 
-let newPeople = [];
+let newPeople = ['Odie', ...people, 'Garfield'];
 const newStuff = {};
 let newState = {};
