@@ -49,8 +49,10 @@ const stuff = {
   cars: ['Toyota','Mazda']
 }
 
-let state = {};
+let state = {people: [...people], stuff: {...stuff}};
 
-let newPeople = [];
-const newStuff = {};
-let newState = {};
+let newPeople = ['Odie', ...people, 'Garfield'];
+const newStuff = {...stuff, cars: [...stuff.cars, 'New Car']};
+let newState = {people: ['Odie', ...state.people, 'Garfield'], stuff: {...state.stuff, cars: [...state.stuff.cars, 'New Car']}};
+
+console.log(people, stuff, state);
