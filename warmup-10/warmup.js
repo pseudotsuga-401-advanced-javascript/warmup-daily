@@ -18,3 +18,27 @@ function whileLoop(array){
   }
 }
 
+function map(array, cb){
+  let answer = [];
+  for(let index in array){
+    answer[index] = cb(array[index]); 
+  }
+  return answer;
+}
+
+function filter(array, cb){
+  let answer = [];
+  for(let index in array){
+    if(cb(array[index])){
+      answer[answer.length] = array[index];
+    }
+  }
+  return answer;
+}
+
+function reduce(array, cb, answer){
+  for(let index in array){
+    answer = cb(answer, arr[index]);
+  }
+  return answer;
+}
