@@ -42,3 +42,21 @@ function reduce(array, cb, answer){
   }
   return answer;
 }
+
+// Objects
+
+const people = ['Kookla','Fran','Ollie'];
+
+const stuff = {
+  tv: 'huge',
+  radio: 'old',
+  toothbrush: 'frayed',
+  cars: ['Toyota','Mazda']
+}
+
+let state = {people: [...people], stuff: {...stuff}};
+
+let newPeople = ['Odie', ...people, 'Garfield'];
+const newStuff = {...stuff, cars: [...stuff.cars, 'Mitsubishi']};
+let newState = {people: ['Odie', ...state.people, 'Garfield'], stuff: {...state.stuff, cars: [...state.stuff.cars, 'Mitsubishi']}};
+
